@@ -2,12 +2,18 @@
 
 $(document).ready(function() {
   $('#blanks form').submit(function(event) {
-    var firstfieldInput = $("input#firstfield").val();
-    var secondfieldInput = $("input#secondfield").val();
-    var thirdfieldInput = $("input#thirdfield").val();
-    $('.firstfield').text(firstfieldInput);
-    $('.secondfield').append(secondfieldInput);
-    $('.thirdfield').text(thirdfieldInput);
+    //var firstfieldInput = $("input#firstfield").val();
+    //var secondfieldInput = $("input#secondfield").val();
+    //var thirdfieldInput = $("input#thirdfield").val();
+    var blanks = ["firstfield", "secondfield", "thirdfield"];
+    //$('.firstfield').text(firstfieldInput);
+    //$('.secondfield').append(secondfieldInput);
+    //$('.thirdfield').text(thirdfieldInput);
+    blanks.forEach(function(sofa) {
+      var userInput = $("input#" + sofa).val();
+      $("." + sofa).text(userInput);
+    })
+
 
     $('#story').show();
 

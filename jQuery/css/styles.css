@@ -1,0 +1,21 @@
+#story {
+  display: none;
+}
+
+
+#capsized {
+  display: none;
+}
+
+
+.green-background {
+  background-color: green;
+}
+
+.orange-background {
+  background-color: orange;
+}
+
+.white-background {
+  background-color: white;
+}
